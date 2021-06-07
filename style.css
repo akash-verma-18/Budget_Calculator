@@ -1,0 +1,256 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+.main-heading{
+    position: absolute;
+    height: 3rem;
+    width: 75rem;
+    display: flex;
+    align-items: center;
+}
+.move{
+    width: 25rem;
+    height: 1.5rem;
+    text-align: center;
+    font-size: 30px;
+    color:rgb(184, 12, 9);
+    text-shadow:2px 2px yellow ;
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-iteration-count: 6;
+    animation-direction: alternate;
+}
+.input-container{
+    height: 30rem;
+    width: 20rem;
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.display-container{
+    height: 30rem;
+    width: 45rem;
+    margin-top: 4rem;
+    margin-left: 4rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* ***************** BUDGET INPUT ************************ */
+.budget-input{
+    height: 10rem;
+    width: 18rem;
+    border: 3px solid rgb(49, 123, 34);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 2%;
+    margin-bottom: 1rem;
+}
+.topic-1{
+    width: 14rem;
+    margin-left: 1rem;
+    font-size: 18px;
+}
+#budget-amount{
+    width: 90%;
+    margin-left: 1rem;
+    border: 1px solid lightgray;
+    border-radius: 3%;
+    height: 2rem;
+}
+#budget-button{
+    width: 5rem;
+    height: 2rem;
+    border: 2px solid rgb(49, 123, 34);
+    background-color: #fff;
+    border-radius: 2%;
+    margin-left: 1rem;
+}
+#budget-button:hover{
+    background-color: rgb(49, 123, 34);
+    cursor: pointer;
+}
+/* ***************** EXPENSE INPUT ************************ */
+.expense-input{
+    height: 15rem;
+    width: 18rem;
+    border: 3px solid  rgb(184, 12, 9);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 2%;
+}
+.topic-2{
+    width: 15rem;
+    margin-left: 1rem;
+    font-size: 18px;
+}
+#expense-type{
+    width: 90%;
+    margin-left: 1rem;
+    border: 1px solid lightgray;
+    border-radius: 3%;
+    height: 2rem;
+}
+.topic-3{
+    width: 16rem;
+    margin-left: 1rem;
+    font-size: 18px;
+}
+#expense-amount{
+    width: 90%;
+    margin-left: 1rem;
+    border: 1px solid lightgray;
+    border-radius: 3%;
+    height: 2rem;
+}
+#expense-button{
+    width: 7rem;
+    height: 2rem;
+    border: 2px solid rgb(184, 12, 9);
+    background-color: #fff;
+    border-radius: 2%;
+    margin-left: 1rem;
+}
+#expense-button:hover{
+    background-color: rgb(184, 12, 9);
+    cursor: pointer;
+}
+/* ********************************************************************** */
+
+/* ********** OVERALL DISPLAY ****************** */
+.overall-display{
+    height: 17rem;
+    width: 42rem;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+.virtual-display{
+    height: 16rem;
+    width: 13rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.topic{
+    height: 1.5rem;
+    width: 6rem;
+    text-align: center;
+    font-weight: bolder;
+}
+.reading-one{
+    color: rgb(0, 128, 0);
+}
+.reading-two{
+    color:rgb(184, 12, 9);
+}
+.reading-three{
+    color: black;
+}
+.balance-red{
+    color:rgb(184, 12, 9);
+}
+.balance-green{
+    color: rgb(0, 128, 0);;
+}
+
+.icon-box{
+    height: 5rem;
+    width: 6rem;
+    font-size: 5rem;
+    text-align: center;
+    color:rgba(31, 87, 207, 0.685);
+}
+
+
+
+
+/* ********** EXPENSE DISPLAY ****************** */
+.expense-display{
+    height: 12rem;
+    width: 42rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: auto;
+
+}
+.topic-row{
+    height: 1.5rem;
+    width: 40rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+.subtopic{
+    margin-top: 0;
+    width: 12rem;
+    height: 1.4rem;
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.expense{
+    height: 10.5rem;
+    width: 40rem;
+}
+.expense-row{
+    height: 1.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 1px solid black;
+}
+
+.content{
+    margin-top:0.2rem;
+    width: 12rem;
+    height: 1.4rem;
+    text-align: center;
+    font-style:italic;
+    font-size: 15px;
+    color:rgb(184, 12, 9);
+}
+.expense-icons{
+    display: flex;
+    justify-content: center;
+}
+.edit-icon{
+    font-size: 0.8rem;
+    margin-right: 1rem;
+    margin-top: 0.1rem;
+    color:rgba(31, 87, 207, 0.685);
+}
+.edit-icon:hover{
+    cursor: pointer;
+}
+.delete-icon{
+    font-size: 0.8rem;
+    margin-top: 0.1rem;
+    color:rgb(184, 12, 9);
+}
+.delete-icon:hover{
+    cursor: pointer;
+}
+
+@keyframes slidein {
+    from {
+      margin-left: 0%;
+    }
+  
+    to {
+      margin-left: 70%;
+    }
+  }
+
