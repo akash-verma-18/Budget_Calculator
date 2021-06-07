@@ -22,4 +22,7 @@ It contains display container which shows the Budget, Expense and Balance values
     We can also edit or delete the expenses as per choice.
 
 ## ScreenShots
+![](1.png)
+![](2.png)
+
 
